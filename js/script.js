@@ -115,4 +115,10 @@ $(function() {
 		$calButton.attr("disabled", true);
 		e.preventDefault();
 	});
+
+	document.addEventListener("keypress", function(event) {
+        if (event.keyCode === 13) {
+            $calButton.click();
+        }
+    });
 });
